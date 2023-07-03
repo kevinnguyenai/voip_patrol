@@ -1,6 +1,6 @@
 #!/bin/sh
 TAG="0.4.0"
-PLATFORM="linux/arm64"
+PLATFORM="linux/arm/v7"
 docker build -f Dockerfile.arm . --no-cache --platform ${PLATFORM} -t voip_patrol
 docker tag voip_patrol_arm:latest ocpasia/voip_patrol_arm:latest
 docker tag voip_patrol_arm:latest ocpasia/voip_patrol_arm:${TAG}
