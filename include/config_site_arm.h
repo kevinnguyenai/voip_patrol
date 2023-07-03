@@ -18,6 +18,6 @@
 // Make send of "100 - Trying" explicit
 #define PJSUA_DISABLE_AUTO_SEND_100 1
 // ARM
-#define PJ_HASH_PENTIUM 0
+#define PJ_HAS_PENTIUM 0
 #define PJ_IS_LITTLE_ENDIAN 0
 #define PJ_IS_BIG_ENDIAN 1
