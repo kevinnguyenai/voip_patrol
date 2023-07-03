@@ -21,3 +21,6 @@
 #define PJ_HAS_PENTIUM 0
 #define PJ_IS_LITTLE_ENDIAN 0
 #define PJ_IS_BIG_ENDIAN 1
+
+/// MACOS_X ARM
+#define PJ_DARWINOS 1
