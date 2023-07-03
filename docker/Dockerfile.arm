@@ -1,6 +1,6 @@
-#FROM python:3.7.10-buster
+FROM python:3.7.10-buster
 #FROM arm64v8/python:3.7-slim-buster
-FROM arm64v8/python:3.7.17-buster
+#FROM arm64v8/python:3.7.17-buster
 
 ARG VERSION="feature/mac"
 
