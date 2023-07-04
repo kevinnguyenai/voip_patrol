@@ -2,7 +2,7 @@
 // #define FD_SETSIZE PJ_IOQUEUE_MAX_HANDLES
 //
 //
-//#define PJ_AUTOCONF 1
+#define PJ_AUTOCONF 1
 #define PJ_IOQUEUE_MAX_HANDLES      1024
 #define FD_SETSIZE_SETABLE      1
 #define __FD_SETSIZE            1024
