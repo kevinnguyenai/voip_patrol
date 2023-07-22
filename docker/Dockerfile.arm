@@ -13,10 +13,11 @@ RUN echo "building VoIP Patrol" \
 	&& mkdir /git && cd /git && git clone https://github.com/kevinnguyenai/voip_patrol.git \
 	&& cd voip_patrol && git checkout ${VERSION} \
 	&& git submodule update --init \
-	&& cp include/config_site_arm.h  pjproject/pjlib/include/pj/config_site.h \
-	&& cd pjproject \
+	&& cp include/config_site_arm.h  pjproject/pjlib/include/pj/config_site.h
+WORKDIR /pjproject
+	#&& cd pjproject \
 	#&& ./configure --host=arm-apple-darwin --disable-libwebrtc --disable-opencore-amr --disable-video \
-	&& ./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr --disable-video \
+RUN ./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr --disable-video \
 	&& make dep && make && make install \
 	&& cd .. && cmake CMakeLists.txt && make
 
