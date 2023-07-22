@@ -5,7 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/pjproject/pjlib/include",
-                "${workspaceFolder}/pjproject/pjlib-util/include"
+                "${workspaceFolder}/pjproject/pjlib-util/include",
+                "/Users/ntuan1/vcpkg/installed/arm64-osx/include/openssl",
+                "/Users/ntuan1/vcpkg/installed/arm64-osx/include"
             ],
             "defines": [],
             "macFrameworkPath": [
