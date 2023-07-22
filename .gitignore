@@ -35,3 +35,6 @@
 build/**
 docker/xml/demo_server.xml
 docker/xml/*.xml
+
+# cmake
+CMakeLists.txt
