@@ -14,7 +14,7 @@ RUN echo "building VoIP Patrol" \
 	&& cd voip_patrol && git checkout ${VERSION} \
 	&& git submodule update --init \
 	&& cp include/config_site_arm.h  pjproject/pjlib/include/pj/config_site.h \
-	&& cd pjproject &&./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr \
+	&& cd pjproject &&./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr --disable-media \
 	&& make dep && make && make install \
 	&& cd .. && cmake CMakeLists.txt && make
 
