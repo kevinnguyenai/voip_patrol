@@ -15,8 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ntuan1/workspaces/OPENSOURCES/VOICEIP/voip_patrol/src/voip_patrol/voip_patrol.cc" "CMakeFiles/voip_patrol.dir/src/voip_patrol/voip_patrol.cc.o" "gcc" "CMakeFiles/voip_patrol.dir/src/voip_patrol/voip_patrol.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

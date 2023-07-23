@@ -35,3 +35,8 @@
 build/**
 docker/xml/demo_server.xml
 docker/xml/*.xml
+CMakeFiles/**
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+.vscode/** 
