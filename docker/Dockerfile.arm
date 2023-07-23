@@ -22,7 +22,7 @@ RUN echo "building VoIP Patrol" \
 	#&& ./configure --host=arm-apple-darwin --disable-libwebrtc --disable-opencore-amr --disable-video \
 	&& ./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr --disable-video \
 	&& make dep && make && make install \
-	&& cd /app/voip_patrol && cmake CMakeLists.txt && make
+	&& cd .. && cmake CMakeLists.txt && make
 
 RUN ln -s /git/voip_patrol/voice_ref_files /voice_ref_files
 
