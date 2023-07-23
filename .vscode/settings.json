@@ -1,1 +1,7 @@
-{}
+{
+  "files.associations": {
+    "rsa.h": "c",
+    "err.h": "c",
+    "bn.h": "c"
+  }
+}
