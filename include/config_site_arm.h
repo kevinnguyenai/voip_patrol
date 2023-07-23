@@ -12,6 +12,9 @@
 #define PJSUA_MAX_CALLS     512
 #define PJSUA_MAX_PLAYERS   512
 
+// SSL
+#define PJ_HAS_SSL_SOCK 1
+#define PJ_SSL_SOCK_IMP PJ_SSL_SOCK_IMP_APPLE
 // SRTP
 #define PJMEDIA_SRTP_HAS_DTLS           1
 // Make send of "100 - Trying" explicit
