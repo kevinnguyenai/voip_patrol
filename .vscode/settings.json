@@ -5,6 +5,7 @@
     "ssl_sock.h": "c",
     "bn.h": "c",
     "err.h": "c",
-    "ssl.h": "c"
+    "ssl.h": "c",
+    "m_auto.h": "c"
   }
 }
