@@ -6,6 +6,8 @@
     "bn.h": "c",
     "err.h": "c",
     "ssl.h": "c",
-    "m_auto.h": "c"
+    "m_auto.h": "c",
+    "config_site.h": "c",
+    "config.h": "c"
   }
 }

@@ -23,4 +23,4 @@
 #define PJ_IS_BIG_ENDIAN	0
 
 // MACOS_X ARM
-//#define PJ_DARWINOS 1
+#define PJ_DARWINOS 1
