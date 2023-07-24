@@ -1,10 +1,8 @@
 {
   "files.associations": {
-    "__locale": "cpp",
-    "algorithm": "cpp",
-    "ssl_sock.h": "c",
-    "bn.h": "c",
+    "rsa.h": "c",
     "err.h": "c",
-    "ssl.h": "c"
-  }
+    "bn.h": "c"
+  },
+  "cmake.cmakePath": "/opt/homebrew/bin/cmake"
 }

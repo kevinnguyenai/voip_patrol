@@ -1,3 +1,0 @@
-/Users/ntuan1/workspaces/OPENSOURCES/VOICEIP/voip_patrol/CMakeFiles/voip_patrol.dir
-/Users/ntuan1/workspaces/OPENSOURCES/VOICEIP/voip_patrol/CMakeFiles/edit_cache.dir
-/Users/ntuan1/workspaces/OPENSOURCES/VOICEIP/voip_patrol/CMakeFiles/rebuild_cache.dir
