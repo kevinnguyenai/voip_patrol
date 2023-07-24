@@ -4,6 +4,7 @@ project(voip_patrol VERSION 1.0.0 LANGUAGES C CXX)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_MACOSX_BUNDLE ON)
 
+
 message("CMAKE_SYSTEM_PROCESSOR:${CMAKE_SYSTEM_PROCESSOR} CMAKE_SYSTEM:${CMAKE_SYSTEM}  CMAKE_BUILD_TYPE:${CMAKE_BUILD_TYPE} OV:${OV}")
 
 set(ROOT_DIR ".")
@@ -48,10 +49,11 @@ set(CMAKE_LIBRARY_PATH
 	"${ROOT_DIR}/pjproject/pjlib-util/lib"
 )
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g")
+#set(AC_SYSTEM "arm-apple-darwin")
 
-execute_process(COMMAND "./pjproject/config.guess" AC_SYSTEM)
-#string(STRIP ${AC_SYSTEM} AC_SYSTEM)
+execute_process(COMMAND "./pjproject/config.guess" OUTPUT_VARIABLE AC_SYSTEM)
+string(STRIP ${AC_SYSTEM} AC_SYSTEM)
 target_link_libraries(voip_patrol
 	pjsua2-${AC_SYSTEM}
 	stdc++
@@ -78,7 +80,7 @@ target_link_libraries(voip_patrol
 	m
 	asound
 	ssl
-	-std=c++11
+	-std=c++17
 )
 
 find_package(PkgConfig REQUIRED)
