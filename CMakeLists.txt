@@ -49,8 +49,8 @@ set(CMAKE_LIBRARY_PATH
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
 
-#execute_process(COMMAND "./pjproject/config.guess" OUTPUT_VARIABLE AC_SYSTEM)
-#string(STRIP ${AC_SYSTEM} AC_SYSTEM)
+execute_process(COMMAND "./pjproject/config.guess" OUTPUT_VARIABLE AC_SYSTEM)
+string(STRIP ${AC_SYSTEM} AC_SYSTEM)
 target_link_libraries(voip_patrol
 	pjsua2-${AC_SYSTEM}
 	stdc++

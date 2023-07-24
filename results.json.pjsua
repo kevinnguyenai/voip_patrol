@@ -1,0 +1,586 @@
+13:24:55.817         sip_endpoint.c  .Module "mod-pjsua-log" registered
+13:24:55.817         sip_endpoint.c  .Module "mod-tsx-layer" registered
+13:24:55.817         sip_endpoint.c  .Module "mod-stateful-util" registered
+13:24:55.817         sip_endpoint.c  .Module "mod-ua" registered
+13:24:55.817         sip_endpoint.c  .Module "mod-100rel" registered
+13:24:55.817         sip_endpoint.c  .Module "mod-pjsua" registered
+13:24:55.818         sip_endpoint.c  .Module "mod-invite" registered
+13:24:55.822             alsa_dev.c  ..ALSA driver found 0 devices
+13:24:55.822             alsa_dev.c  ..ALSA initialized
+13:24:55.831                  pjlib  ..select() I/O Queue created (0x1101ae8)
+13:24:55.831           conference.c  ..Creating conference bridge with 514 ports
+13:24:55.831           Master/sound  ..Using delay buffer with WSOLA.
+13:24:56.116              DTLS-SRTP  ..:AES_CM_128_HMAC_SHA1_80:AES_CM_128_HMAC_SHA1_32 profile is supported
+13:24:56.116         sip_endpoint.c  .Module "mod-evsub" registered
+13:24:56.116         sip_endpoint.c  .Module "mod-presence" registered
+13:24:56.116                evsub.c  .Event pkg "presence" registered by mod-presence
+13:24:56.116         sip_endpoint.c  .Module "mod-mwi" registered
+13:24:56.116                evsub.c  .Event pkg "message-summary" registered by mod-mwi
+13:24:56.116         sip_endpoint.c  .Module "mod-refer" registered
+13:24:56.116                evsub.c  .Event pkg "refer" registered by mod-refer
+13:24:56.116         sip_endpoint.c  .Module "mod-pjsua-pres" registered
+13:24:56.116         sip_endpoint.c  .Module "mod-pjsua-im" registered
+13:24:56.116         sip_endpoint.c  .Module "mod-pjsua-options" registered
+13:24:56.116           pjsua_core.c  .1 SIP worker threads created
+13:24:56.116           pjsua_core.c  .pjsua version 2.10-dev for Linux-4.4.0.87/x86_64/glibc-2.23 initialized
+13:24:56.116           pjsua_core.c  .PJSUA state changed: CREATED --> INIT
+13:24:56.116           pjsua_core.c  SIP UDP socket reachable at 42.116.254.248:5060
+13:24:56.116           udp0x11c04b0  SIP UDP transport started, published address is 42.116.254.248:5060
+13:24:56.117             tcptp:5060  SIP TCP listener ready for incoming connections at 42.116.254.248:5060
+13:24:56.117             tlstp:5061  SIP TLS listener is ready for incoming connections at 42.116.254.248:5061
+13:24:56.117            pjsua_aud.c  Setting null sound device..
+13:24:56.117            pjsua_aud.c  .Opening null sound device..
+13:24:56.117           pjsua_core.c  PJSUA state changed: INIT --> STARTING
+13:24:56.117         sip_endpoint.c  .Module "mod-unsolicited-mwi" registered
+13:24:56.117           pjsua_core.c  .PJSUA state changed: STARTING --> RUNNING
+13:24:56.117            pjsua_acc.c  Adding account: id=sip:default
+13:24:56.117            pjsua_acc.c  .Account sip:default added with id 0
+13:24:57.118            pjsua_aud.c !Closing sound device after idle for 1 second(s)
+13:24:57.118            pjsua_aud.c  .Closing null sound device..
+13:25:01.193           pjsua_core.c !Shutting down, flags=0...
+13:25:01.193           pjsua_core.c  PJSUA state changed: RUNNING --> CLOSING
+13:25:01.200           pjsua_call.c  .Hangup all calls..
+13:25:01.200          pjsua_media.c  .Call 0: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 1: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 2: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 3: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 4: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 5: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 6: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 7: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 8: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 9: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 10: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 11: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 12: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 13: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 14: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 15: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 16: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 17: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 18: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 19: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 20: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 21: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 22: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 23: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 24: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 25: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 26: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 27: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 28: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 29: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 30: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 31: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 32: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 33: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 34: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 35: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 36: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 37: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 38: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 39: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 40: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 41: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 42: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 43: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 44: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 45: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 46: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 47: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 48: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 49: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 50: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 51: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 52: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 53: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 54: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 55: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 56: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 57: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 58: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 59: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 60: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 61: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 62: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 63: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 64: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 65: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 66: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 67: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 68: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 69: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 70: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 71: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 72: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 73: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 74: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 75: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 76: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 77: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 78: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 79: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 80: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 81: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 82: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 83: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 84: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 85: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 86: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 87: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 88: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 89: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 90: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 91: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 92: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 93: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 94: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 95: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 96: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 97: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 98: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 99: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 100: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 101: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 102: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 103: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 104: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 105: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 106: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 107: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 108: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 109: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 110: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 111: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 112: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 113: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 114: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 115: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 116: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 117: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 118: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 119: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 120: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 121: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 122: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 123: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 124: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 125: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 126: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 127: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 128: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 129: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 130: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 131: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 132: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 133: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 134: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 135: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 136: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 137: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 138: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 139: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 140: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 141: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 142: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 143: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 144: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 145: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 146: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 147: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 148: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 149: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 150: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 151: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 152: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 153: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 154: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 155: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 156: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 157: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 158: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 159: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 160: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 161: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 162: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 163: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 164: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 165: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 166: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 167: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 168: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 169: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 170: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 171: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 172: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 173: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 174: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 175: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 176: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 177: deinitializing media..
+13:25:01.200          pjsua_media.c  .Call 178: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 179: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 180: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 181: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 182: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 183: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 184: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 185: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 186: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 187: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 188: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 189: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 190: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 191: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 192: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 193: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 194: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 195: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 196: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 197: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 198: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 199: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 200: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 201: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 202: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 203: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 204: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 205: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 206: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 207: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 208: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 209: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 210: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 211: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 212: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 213: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 214: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 215: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 216: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 217: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 218: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 219: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 220: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 221: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 222: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 223: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 224: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 225: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 226: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 227: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 228: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 229: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 230: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 231: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 232: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 233: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 234: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 235: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 236: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 237: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 238: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 239: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 240: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 241: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 242: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 243: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 244: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 245: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 246: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 247: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 248: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 249: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 250: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 251: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 252: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 253: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 254: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 255: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 256: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 257: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 258: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 259: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 260: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 261: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 262: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 263: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 264: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 265: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 266: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 267: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 268: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 269: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 270: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 271: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 272: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 273: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 274: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 275: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 276: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 277: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 278: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 279: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 280: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 281: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 282: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 283: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 284: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 285: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 286: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 287: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 288: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 289: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 290: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 291: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 292: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 293: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 294: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 295: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 296: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 297: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 298: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 299: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 300: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 301: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 302: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 303: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 304: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 305: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 306: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 307: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 308: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 309: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 310: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 311: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 312: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 313: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 314: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 315: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 316: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 317: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 318: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 319: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 320: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 321: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 322: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 323: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 324: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 325: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 326: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 327: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 328: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 329: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 330: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 331: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 332: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 333: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 334: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 335: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 336: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 337: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 338: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 339: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 340: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 341: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 342: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 343: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 344: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 345: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 346: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 347: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 348: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 349: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 350: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 351: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 352: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 353: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 354: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 355: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 356: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 357: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 358: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 359: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 360: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 361: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 362: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 363: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 364: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 365: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 366: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 367: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 368: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 369: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 370: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 371: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 372: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 373: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 374: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 375: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 376: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 377: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 378: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 379: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 380: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 381: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 382: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 383: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 384: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 385: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 386: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 387: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 388: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 389: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 390: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 391: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 392: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 393: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 394: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 395: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 396: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 397: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 398: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 399: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 400: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 401: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 402: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 403: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 404: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 405: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 406: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 407: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 408: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 409: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 410: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 411: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 412: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 413: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 414: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 415: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 416: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 417: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 418: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 419: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 420: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 421: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 422: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 423: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 424: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 425: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 426: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 427: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 428: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 429: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 430: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 431: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 432: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 433: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 434: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 435: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 436: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 437: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 438: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 439: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 440: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 441: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 442: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 443: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 444: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 445: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 446: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 447: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 448: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 449: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 450: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 451: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 452: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 453: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 454: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 455: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 456: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 457: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 458: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 459: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 460: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 461: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 462: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 463: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 464: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 465: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 466: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 467: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 468: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 469: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 470: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 471: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 472: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 473: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 474: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 475: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 476: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 477: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 478: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 479: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 480: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 481: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 482: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 483: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 484: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 485: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 486: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 487: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 488: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 489: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 490: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 491: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 492: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 493: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 494: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 495: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 496: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 497: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 498: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 499: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 500: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 501: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 502: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 503: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 504: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 505: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 506: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 507: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 508: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 509: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 510: deinitializing media..
+13:25:01.201          pjsua_media.c  .Call 511: deinitializing media..
+13:25:01.201           pjsua_pres.c  .Shutting down presence..
+13:25:02.203           pjsua_core.c  .Destroying...
+13:25:02.203          pjsua_media.c  .Shutting down media..
+13:25:02.333         sip_endpoint.c  .Destroying endpoint instance..
+13:25:02.333      sip_transaction.c  .Stopping transaction layer module
+13:25:02.333      sip_transaction.c  .Stopped transaction layer module
+13:25:02.333         sip_endpoint.c  .Module "mod-unsolicited-mwi" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-pjsua-options" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-pjsua-im" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-pjsua-pres" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-pjsua" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-stateful-util" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-refer" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-mwi" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-presence" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-evsub" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-invite" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-100rel" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-ua" unregistered
+13:25:02.333      sip_transaction.c  .Transaction layer module destroyed
+13:25:02.333         sip_endpoint.c  .Module "mod-tsx-layer" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-msg-print" unregistered
+13:25:02.333         sip_endpoint.c  .Module "mod-pjsua-log" unregistered
+13:25:02.333        sip_transport.c  .Destroying transport manager
+13:25:02.334           udp0x11c04b0  .SIP UDP transport destroyed
+13:25:02.334             tcptp:5060  .SIP TCP transport destroyed
+13:25:02.334             tlstp:5061  .SIP TLS transport destroyed
+13:25:02.334                timer.c  .Dumping timer heap:
+13:25:02.334                timer.c  .  Cur size: 0 entries, max: 3070
+13:25:02.334         sip_endpoint.c  .Endpoint 0x10d6d28 destroyed
+13:25:02.334           pjsua_core.c  .PJSUA state changed: CLOSING --> NULL
+13:25:02.334           pjsua_core.c  .PJSUA destroyed...
