@@ -40,3 +40,7 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile
 .vscode/** 
+
+## testing result
+/load_test/*.json
+/load_test/*.pjsua

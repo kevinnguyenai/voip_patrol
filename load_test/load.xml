@@ -9,24 +9,26 @@
             max_duration="20" hangup="20"
             code="200" reason="OK"
             rtp_stats="true"
-	    play="../voice_ref_files/reference_8000.wav"
+	        play="../voice_ref_files/reference_8000.wav"
     />
     <action type="register" transport="udp" expected_cause_code="200"
         username="VP_ENV_U" password="password"
-        realm="VP_ENV_SERVER"
+        realm="leap.expert"
         registrar="VP_ENV_SERVER"
     />
     <action type="wait" complete/>
     <action type="call" label="outbound"
+        username="VP_ENV_U" password="password"
+        realm="leap.expert"
         callee="VP_ENV_CALLEE"
         caller="perf_caller"
-        from="&quot;voip_patrol&quot; <sip:perf_test_client@lab>"
+        from="&quot;demo_000009&quot; <sip:demo_000009@leap.expert>"
         expected_cause_code="200"
         rtp_stats="true"
         hangup="25"
         max_ringing_duration="120"
-	play="../voice_ref_files/reference_8000.wav"
-        repeat="99"
+	    play="../voice_ref_files/reference_8000.wav"
+        repeat="200"
 	/>
     <action type="wait" complete="true"/>
     <action type="register" transport="udp" expected_cause_code="200"
