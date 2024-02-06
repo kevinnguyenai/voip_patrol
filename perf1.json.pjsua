@@ -1,0 +1,820 @@
+07:30:16.110         sip_endpoint.c  .Module "mod-pjsua-log" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-tsx-layer" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-stateful-util" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-ua" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-100rel" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-pjsua" registered
+07:30:16.110         sip_endpoint.c  .Module "mod-invite" registered
+07:30:16.113             alsa_dev.c  ..ALSA driver found 0 devices
+07:30:16.113             alsa_dev.c  ..ALSA initialized
+07:30:16.116                  pjlib  ..select() I/O Queue created (0x55836c598728)
+07:30:16.117           conference.c  ..Creating conference bridge with 514 ports
+07:30:16.117           Master/sound  ..Using delay buffer with WSOLA.
+07:30:16.264              DTLS-SRTP  ..:AES_CM_128_HMAC_SHA1_80:AES_CM_128_HMAC_SHA1_32:AEAD_AES_256_GCM:AEAD_AES_128_GCM profile is supported
+07:30:16.264         sip_endpoint.c  .Module "mod-evsub" registered
+07:30:16.264         sip_endpoint.c  .Module "mod-presence" registered
+07:30:16.264                evsub.c  .Event pkg "presence" registered by mod-presence
+07:30:16.264         sip_endpoint.c  .Module "mod-mwi" registered
+07:30:16.264                evsub.c  .Event pkg "message-summary" registered by mod-mwi
+07:30:16.264         sip_endpoint.c  .Module "mod-refer" registered
+07:30:16.264                evsub.c  .Event pkg "refer" registered by mod-refer
+07:30:16.264         sip_endpoint.c  .Module "mod-pjsua-pres" registered
+07:30:16.264         sip_endpoint.c  .Module "mod-pjsua-im" registered
+07:30:16.264         sip_endpoint.c  .Module "mod-pjsua-options" registered
+07:30:16.264           pjsua_core.c  .1 SIP worker threads created
+07:30:16.264           pjsua_core.c  .pjsua version 2.10-dev for Linux-6.2.3.248/x86_64/glibc-2.35 initialized
+07:30:16.264           pjsua_core.c  .PJSUA state changed: CREATED --> INIT
+07:30:16.265           pjsua_core.c  SIP UDP socket reachable at 10.9.16.116:5080
+07:30:16.265      udp0x55836c62fb40  SIP UDP transport started, published address is 10.9.16.116:5080
+07:30:16.265             tcptp:5080  SIP TCP listener ready for incoming connections at 10.9.16.116:5080
+07:30:16.265             tlstp:5081  SIP TLS listener is ready for incoming connections at 10.9.16.116:5081
+07:30:16.265            pjsua_aud.c  Setting null sound device..
+07:30:16.265            pjsua_aud.c  .Opening null sound device..
+07:30:16.265           pjsua_core.c  PJSUA state changed: INIT --> STARTING
+07:30:16.265         sip_endpoint.c  .Module "mod-unsolicited-mwi" registered
+07:30:16.265           pjsua_core.c  .PJSUA state changed: STARTING --> RUNNING
+07:30:16.266            pjsua_acc.c  Adding account: id=sip:default
+07:30:16.266            pjsua_acc.c  .Account sip:default added with id 0
+07:30:16.266            pjsua_acc.c  Adding account: id=sip:12542724613@20.110.145.242;transport=
+07:30:16.266            pjsua_acc.c  .Account sip:12542724613@20.110.145.242;transport= added with id 1
+07:30:16.266           pjsua_call.c  Making call with acc #1 to sip:12542724631@10.9.16.116
+07:30:16.266      dlg0x55836c6f6f78  .UAC dialog created
+07:30:16.266      dlg0x55836c6f6f78  ..Session count inc to 2 by mod-pjsua
+07:30:16.266          pjsua_media.c  .Call 0: initializing media..
+07:30:16.266          pjsua_media.c  ..RTP socket reachable at 10.9.16.116:10010
+07:30:16.266          pjsua_media.c  ..RTCP socket reachable at 10.9.16.116:10011
+07:30:16.266     srtp0x55836c6fb370  ..SRTP keying SDES created
+07:30:16.266     srtp0x55836c6fb370  ..SRTP keying DTLS-SRTP created
+07:30:16.266          pjsua_media.c  ..Media index 0 selected for audio call 0
+07:30:16.266          pjsua_media.c  ..Call 0: media transport initialization complete: Success
+07:30:16.266      dlg0x55836c6f6f78  ..Session count dec to 2 by mod-pjsua
+07:30:16.266      dlg0x55836c6f6f78  .Module mod-invite added as dialog usage, data=0x55836c6fe1f8
+07:30:16.266      dlg0x55836c6f6f78  ..Session count inc to 4 by mod-invite
+07:30:16.266      dlg0x55836c6f6f78  .Module mod-100rel added as dialog usage, data=0x55836c7000c8
+07:30:16.266      dlg0x55836c6f6f78  .100rel module attached
+07:30:16.266      inv0x55836c6f6f78  .UAC invite session created for dialog dlg0x55836c6f6f78
+07:30:16.266               endpoint  .Request msg INVITE/cseq=31971 (tdta0x55836c700308) created.
+07:30:16.266      inv0x55836c6f6f78  ..Sending Request msg INVITE/cseq=31971 (tdta0x55836c700308)
+07:30:16.266      dlg0x55836c6f6f78  ...Sending Request msg INVITE/cseq=31971 (tdta0x55836c700308)
+07:30:16.266      tsx0x55836c703278  ....Transaction created for Request msg INVITE/cseq=31970 (tdta0x55836c700308)
+07:30:16.266      tsx0x55836c703278  ...Sending Request msg INVITE/cseq=31970 (tdta0x55836c700308) in state Null
+07:30:16.266          sip_resolve.c  ....Target '10.9.16.116:0' type=Unspecified resolved to '10.9.16.116:5060' type=UDP (UDP transport)
+07:30:16.266           pjsua_core.c  ....TX 1245 bytes Request msg INVITE/cseq=31970 (tdta0x55836c700308) to UDP 10.9.16.116:5060:
+INVITE sip:12542724631@10.9.16.116 SIP/2.0
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport;branch=z9hG4bKPj299Lnj6nPK-zDuL0JrZpx7Sr8FMawxUf
+Max-Forwards: 70
+From: sip:12542724613@20.110.145.242;transport;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS
+To: sip:12542724631@10.9.16.116
+Contact: <sip:12542724613@10.9.16.116:5080;ob>
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+CSeq: 31970 INVITE
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Supported: replaces, 100rel, timer, norefersub
+Session-Expires: 1800
+Min-SE: 90
+Content-Type: application/sdp
+Content-Length:   627
+
+v=0
+o=- 3916193416 3916193416 IN IP4 10.9.16.116
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 10010 RTP/AVP 96 97 98 99 3 0 8 9 120 121 122
+c=IN IP4 10.9.16.116
+b=TIAS:64000
+a=rtcp:10011 IN IP4 10.9.16.116
+a=sendrecv
+a=rtpmap:96 speex/16000
+a=rtpmap:97 speex/8000
+a=rtpmap:98 speex/32000
+a=rtpmap:99 iLBC/8000
+a=fmtp:99 mode=30
+a=rtpmap:3 GSM/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:9 G722/8000
+a=rtpmap:120 telephone-event/16000
+a=fmtp:120 0-16
+a=rtpmap:121 telephone-event/8000
+a=fmtp:121 0-16
+a=rtpmap:122 telephone-event/32000
+a=fmtp:122 0-16
+a=ssrc:754339194 cname:7545e7a951828b99
+
+--end msg--
+07:30:16.266      tsx0x55836c703278  ....State changed from Null to Calling, event=TX_MSG
+07:30:16.266      dlg0x55836c6f6f78  .....Transaction tsx0x55836c703278 state changed to Calling
+07:30:16.274         sip_endpoint.c !Processing incoming message: Response msg 100/INVITE/cseq=31970 (rdata0x55836c6f0c98)
+07:30:16.274           pjsua_core.c  .RX 343 bytes Response msg 100/INVITE/cseq=31970 (rdata0x55836c6f0c98) from UDP 10.9.16.116:5060:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport=5080;received=10.9.16.116;branch=z9hG4bKPj299Lnj6nPK-zDuL0JrZpx7Sr8FMawxUf
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+From: <sip:12542724613@20.110.145.242>;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS;transport
+To: <sip:12542724631@10.9.16.116>
+CSeq: 31970 INVITE
+Content-Length:  0
+
+
+--end msg--
+07:30:16.274      tsx0x55836c703278  .Incoming Response msg 100/INVITE/cseq=31970 (rdata0x55836c6f0c98) in state Calling
+07:30:16.274      tsx0x55836c703278  ..State changed from Calling to Proceeding, event=RX_MSG
+07:30:16.274      dlg0x55836c6f6f78  ...Received Response msg 100/INVITE/cseq=31970 (rdata0x55836c6f0c98)
+07:30:16.274      dlg0x55836c6f6f78  ...Transaction tsx0x55836c703278 state changed to Proceeding
+07:30:16.275         sip_endpoint.c  Processing incoming message: Response msg 100/INVITE/cseq=31970 (rdata0x7f9f180016a8)
+07:30:16.275           pjsua_core.c  .RX 343 bytes Response msg 100/INVITE/cseq=31970 (rdata0x7f9f180016a8) from UDP 10.9.16.116:5060:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport=5080;received=10.9.16.116;branch=z9hG4bKPj299Lnj6nPK-zDuL0JrZpx7Sr8FMawxUf
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+From: <sip:12542724613@20.110.145.242>;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS;transport
+To: <sip:12542724631@10.9.16.116>
+CSeq: 31970 INVITE
+Content-Length:  0
+
+
+--end msg--
+07:30:16.275      tsx0x55836c703278  .Incoming Response msg 100/INVITE/cseq=31970 (rdata0x7f9f180016a8) in state Proceeding
+07:30:16.275      tsx0x55836c703278  ..State changed from Proceeding to Proceeding, event=RX_MSG
+07:30:16.275      dlg0x55836c6f6f78  ...Received Response msg 100/INVITE/cseq=31970 (rdata0x7f9f180016a8)
+07:30:16.275      dlg0x55836c6f6f78  ...Transaction tsx0x55836c703278 state changed to Proceeding
+07:30:16.275         sip_endpoint.c  Processing incoming message: Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8)
+07:30:16.275           pjsua_core.c  .RX 895 bytes Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8) from UDP 10.9.16.116:5060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport=5080;received=10.9.16.116;branch=z9hG4bKPj299Lnj6nPK-zDuL0JrZpx7Sr8FMawxUf
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+From: <sip:12542724613@20.110.145.242>;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS;transport
+To: <sip:12542724631@10.9.16.116>;tag=HPM4b3XPutTS0KQrQn8HVsq9SHgS7kyK
+CSeq: 31970 INVITE
+Contact: <sip:10.9.16.116:5060>
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS
+Supported: replaces, 100rel, norefersub
+Content-Type: application/sdp
+Content-Length:   313
+
+v=0
+o=- 3916193416 3916193417 IN IP4 10.9.16.116
+s=pjmedia
+b=AS:84
+t=0 0
+a=X-nat:0
+m=audio 4000 RTP/AVP 0 121
+c=IN IP4 10.9.16.116
+b=TIAS:64000
+a=rtcp:4001 IN IP4 10.9.16.116
+a=sendrecv
+a=rtpmap:0 PCMU/8000
+a=ssrc:1186866137 cname:3ff0bc6422a1ae73
+a=rtpmap:121 telephone-event/8000
+a=fmtp:121 0-16
+
+--end msg--
+07:30:16.275      tsx0x55836c703278  .Incoming Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8) in state Proceeding
+07:30:16.275      tsx0x55836c703278  ..State changed from Proceeding to Terminated, event=RX_MSG
+07:30:16.275      dlg0x55836c6f6f78  ...Received Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8)
+07:30:16.275      dlg0x55836c6f6f78  ....Route-set updated
+07:30:16.275      dlg0x55836c6f6f78  ....Route-set frozen
+07:30:16.275      dlg0x55836c6f6f78  ...Transaction tsx0x55836c703278 state changed to Terminated
+07:30:16.275      inv0x55836c6f6f78  ....Got SDP answer in Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8)
+07:30:16.275      inv0x55836c6f6f78  ....SDP negotiation done: Success
+07:30:16.275           pjsua_call.c  .....Call 0: remote NAT type is 0 (Unknown)
+07:30:16.275          pjsua_media.c  .....Call 0: updating media..
+07:30:16.275          pjsua_media.c  .......Media stream call00:0 is destroyed
+07:30:16.275            pjsua_aud.c  ......Audio channel update..
+07:30:16.275                  rtp.c  .......pjmedia_rtp_session_init: ses=0x7f9f18008200, default_pt=0, ssrc=0x2cf64d7a
+07:30:16.275                  rtp.c  .......pjmedia_rtp_session_init: ses=0x7f9f18008880, default_pt=0, ssrc=0x2cf64d7a
+07:30:16.275               stream.c  .......Stream strm0x7f9f18005398 created
+07:30:16.275     strm0x7f9f18005398  .......Encoder stream started
+07:30:16.275     strm0x7f9f18005398  .......Decoder stream started
+07:30:16.275             resample.c  .......resample created: high qualiy, large filter, in/out rate=8000/16000
+07:30:16.275             resample.c  .......resample created: high qualiy, large filter, in/out rate=16000/8000
+07:30:16.275          pjsua_media.c  ......Audio updated, stream #0: PCMU (sendrecv)
+07:30:16.275      inv0x55836c6f6f78  ....Received Response msg 200/INVITE/cseq=31970 (rdata0x7f9f180016a8), sending ACK
+07:30:16.275               endpoint  ....Request msg ACK/cseq=31970 (tdta0x7f9f1800bae8) created.
+07:30:16.275      dlg0x55836c6f6f78  .....Sending Request msg ACK/cseq=31970 (tdta0x7f9f1800bae8)
+07:30:16.275          sip_resolve.c  .....Target '10.9.16.116:5060' type=Unspecified resolved to '10.9.16.116:5060' type=UDP (UDP transport)
+07:30:16.275           pjsua_core.c  .....TX 379 bytes Request msg ACK/cseq=31970 (tdta0x7f9f1800bae8) to UDP 10.9.16.116:5060:
+ACK sip:10.9.16.116:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport;branch=z9hG4bKPjhibnALocSpWuNK8ckFn3MQ90QJFumPET
+Max-Forwards: 70
+From: sip:12542724613@20.110.145.242;transport;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS
+To: sip:12542724631@10.9.16.116;tag=HPM4b3XPutTS0KQrQn8HVsq9SHgS7kyK
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+CSeq: 31970 ACK
+Content-Length:  0
+
+
+--end msg--
+07:30:16.275            pjsua_aud.c  .....Creating file player: voice_ref_files/reference_8000.wav..
+07:30:16.275           wav_player.c  ......File player 'voice_ref_files/reference_8000.wav' created: samp.rate=16000, ch=1, bufsize=4KB, filesize=980KB
+07:30:16.275            pjsua_aud.c  ......Player created, id=0, slot=2
+07:30:16.275            pjsua_aud.c  .....Conf connect: 2 --> 1
+07:30:16.275           conference.c  ......Port 2 (voice_ref_files/reference_8000.wav) transmitting to port 1 (sip:12542724631@10.9.16.116)
+07:30:16.275      tsx0x55836c703278  Timeout timer event
+07:30:16.275      tsx0x55836c703278  .State changed from Terminated to Destroyed, event=TIMER
+07:30:16.275      tsx0x55836c703278  Transaction destroyed!
+07:30:16.285     strm0x7f9f18005398 !Start talksprut..
+07:30:16.617     strm0x7f9f18005398 !RTP status: badpt=0, badssrc=0, dup=0, outorder=0, probation=-1, restart=0
+07:30:21.273           pjsua_call.c !Call 0 hanging up: code=0..
+07:30:21.273               endpoint  ..Request msg BYE/cseq=31972 (tdta0x55836c7069e8) created.
+07:30:21.273      inv0x55836c6f6f78  ..Sending Request msg BYE/cseq=31972 (tdta0x55836c7069e8)
+07:30:21.273      dlg0x55836c6f6f78  ...Sending Request msg BYE/cseq=31972 (tdta0x55836c7069e8)
+07:30:21.273      tsx0x55836c703278  ....Transaction created for Request msg BYE/cseq=31971 (tdta0x55836c7069e8)
+07:30:21.273      tsx0x55836c703278  ...Sending Request msg BYE/cseq=31971 (tdta0x55836c7069e8) in state Null
+07:30:21.273          sip_resolve.c  ....Target '10.9.16.116:5060' type=Unspecified resolved to '10.9.16.116:5060' type=UDP (UDP transport)
+07:30:21.274           pjsua_core.c  ....TX 379 bytes Request msg BYE/cseq=31971 (tdta0x55836c7069e8) to UDP 10.9.16.116:5060:
+BYE sip:10.9.16.116:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport;branch=z9hG4bKPjPwKsdamL4oi6J2gYufBMDTooCYS2crse
+Max-Forwards: 70
+From: sip:12542724613@20.110.145.242;transport;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS
+To: sip:12542724631@10.9.16.116;tag=HPM4b3XPutTS0KQrQn8HVsq9SHgS7kyK
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+CSeq: 31971 BYE
+Content-Length:  0
+
+
+--end msg--
+07:30:21.274      tsx0x55836c703278  ....State changed from Null to Calling, event=TX_MSG
+07:30:21.274      dlg0x55836c6f6f78  .....Transaction tsx0x55836c703278 state changed to Calling
+07:30:21.274         sip_endpoint.c !Processing incoming message: Response msg 200/BYE/cseq=31971 (rdata0x7f9f180016a8)
+07:30:21.274           pjsua_core.c  .RX 373 bytes Response msg 200/BYE/cseq=31971 (rdata0x7f9f180016a8) from UDP 10.9.16.116:5060:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.16.116:5080;rport=5080;received=10.9.16.116;branch=z9hG4bKPjPwKsdamL4oi6J2gYufBMDTooCYS2crse
+Call-ID: Ubwbm9Q1bAbluXH7jGLsZ02Q6Z5XmF99
+From: <sip:12542724613@20.110.145.242>;tag=Hn8Ub4zqEvZVv2ec6-bM4ESR6AFsNRbS;transport
+To: <sip:12542724631@10.9.16.116>;tag=HPM4b3XPutTS0KQrQn8HVsq9SHgS7kyK
+CSeq: 31971 BYE
+Content-Length:  0
+
+
+--end msg--
+07:30:21.274      tsx0x55836c703278  .Incoming Response msg 200/BYE/cseq=31971 (rdata0x7f9f180016a8) in state Calling
+07:30:21.274      tsx0x55836c703278  ..State changed from Calling to Completed, event=RX_MSG
+07:30:21.274      dlg0x55836c6f6f78  ...Received Response msg 200/BYE/cseq=31971 (rdata0x7f9f180016a8)
+07:30:21.274      dlg0x55836c6f6f78  ...Transaction tsx0x55836c703278 state changed to Completed
+07:30:21.274            pjsua_aud.c  .....Destroying player 0..
+07:30:21.274          pjsua_media.c  .....Call 0: deinitializing media..
+07:30:21.274     strm0x7f9f18005398  .......JB summary:
+  size=50/eff=50 prefetch=0 level=0
+  delay (min/max/avg/dev)=0/0/0/0 ms
+  burst (min/max/avg/dev)=0/0/0/0 frames
+  lost=0 discard=448 empty=0
+07:30:21.274          pjsua_media.c  .......Media stream call00:0 is destroyed
+07:30:21.274     tdta0x7f9f1800bae8  ....Destroying txdata Request msg ACK/cseq=31970 (tdta0x7f9f1800bae8)
+07:30:21.274     tdta0x55836c700308  ....Destroying txdata Request msg INVITE/cseq=31970 (tdta0x55836c700308)
+07:30:21.274      dlg0x55836c6f6f78  .....Session count dec to 1 by mod-invite
+07:30:21.424           pjsua_core.c !Shutting down, flags=0...
+07:30:21.424           pjsua_core.c  PJSUA state changed: RUNNING --> CLOSING
+07:30:21.426           pjsua_call.c  .Hangup all calls..
+07:30:21.426          pjsua_media.c  .Call 0: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 1: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 2: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 3: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 4: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 5: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 6: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 7: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 8: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 9: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 10: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 11: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 12: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 13: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 14: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 15: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 16: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 17: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 18: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 19: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 20: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 21: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 22: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 23: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 24: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 25: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 26: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 27: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 28: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 29: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 30: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 31: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 32: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 33: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 34: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 35: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 36: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 37: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 38: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 39: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 40: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 41: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 42: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 43: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 44: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 45: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 46: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 47: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 48: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 49: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 50: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 51: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 52: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 53: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 54: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 55: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 56: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 57: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 58: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 59: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 60: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 61: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 62: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 63: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 64: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 65: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 66: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 67: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 68: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 69: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 70: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 71: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 72: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 73: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 74: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 75: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 76: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 77: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 78: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 79: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 80: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 81: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 82: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 83: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 84: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 85: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 86: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 87: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 88: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 89: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 90: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 91: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 92: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 93: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 94: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 95: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 96: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 97: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 98: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 99: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 100: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 101: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 102: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 103: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 104: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 105: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 106: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 107: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 108: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 109: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 110: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 111: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 112: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 113: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 114: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 115: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 116: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 117: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 118: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 119: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 120: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 121: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 122: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 123: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 124: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 125: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 126: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 127: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 128: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 129: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 130: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 131: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 132: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 133: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 134: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 135: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 136: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 137: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 138: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 139: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 140: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 141: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 142: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 143: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 144: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 145: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 146: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 147: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 148: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 149: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 150: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 151: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 152: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 153: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 154: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 155: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 156: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 157: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 158: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 159: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 160: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 161: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 162: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 163: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 164: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 165: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 166: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 167: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 168: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 169: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 170: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 171: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 172: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 173: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 174: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 175: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 176: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 177: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 178: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 179: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 180: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 181: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 182: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 183: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 184: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 185: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 186: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 187: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 188: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 189: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 190: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 191: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 192: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 193: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 194: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 195: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 196: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 197: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 198: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 199: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 200: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 201: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 202: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 203: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 204: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 205: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 206: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 207: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 208: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 209: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 210: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 211: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 212: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 213: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 214: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 215: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 216: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 217: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 218: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 219: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 220: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 221: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 222: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 223: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 224: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 225: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 226: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 227: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 228: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 229: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 230: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 231: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 232: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 233: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 234: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 235: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 236: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 237: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 238: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 239: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 240: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 241: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 242: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 243: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 244: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 245: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 246: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 247: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 248: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 249: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 250: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 251: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 252: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 253: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 254: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 255: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 256: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 257: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 258: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 259: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 260: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 261: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 262: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 263: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 264: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 265: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 266: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 267: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 268: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 269: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 270: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 271: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 272: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 273: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 274: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 275: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 276: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 277: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 278: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 279: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 280: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 281: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 282: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 283: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 284: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 285: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 286: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 287: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 288: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 289: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 290: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 291: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 292: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 293: deinitializing media..
+07:30:21.426          pjsua_media.c  .Call 294: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 295: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 296: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 297: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 298: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 299: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 300: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 301: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 302: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 303: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 304: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 305: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 306: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 307: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 308: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 309: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 310: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 311: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 312: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 313: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 314: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 315: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 316: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 317: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 318: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 319: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 320: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 321: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 322: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 323: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 324: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 325: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 326: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 327: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 328: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 329: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 330: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 331: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 332: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 333: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 334: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 335: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 336: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 337: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 338: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 339: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 340: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 341: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 342: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 343: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 344: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 345: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 346: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 347: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 348: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 349: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 350: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 351: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 352: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 353: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 354: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 355: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 356: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 357: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 358: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 359: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 360: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 361: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 362: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 363: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 364: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 365: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 366: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 367: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 368: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 369: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 370: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 371: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 372: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 373: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 374: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 375: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 376: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 377: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 378: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 379: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 380: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 381: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 382: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 383: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 384: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 385: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 386: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 387: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 388: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 389: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 390: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 391: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 392: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 393: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 394: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 395: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 396: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 397: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 398: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 399: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 400: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 401: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 402: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 403: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 404: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 405: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 406: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 407: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 408: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 409: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 410: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 411: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 412: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 413: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 414: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 415: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 416: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 417: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 418: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 419: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 420: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 421: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 422: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 423: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 424: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 425: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 426: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 427: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 428: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 429: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 430: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 431: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 432: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 433: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 434: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 435: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 436: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 437: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 438: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 439: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 440: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 441: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 442: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 443: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 444: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 445: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 446: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 447: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 448: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 449: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 450: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 451: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 452: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 453: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 454: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 455: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 456: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 457: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 458: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 459: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 460: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 461: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 462: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 463: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 464: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 465: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 466: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 467: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 468: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 469: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 470: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 471: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 472: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 473: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 474: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 475: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 476: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 477: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 478: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 479: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 480: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 481: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 482: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 483: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 484: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 485: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 486: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 487: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 488: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 489: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 490: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 491: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 492: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 493: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 494: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 495: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 496: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 497: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 498: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 499: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 500: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 501: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 502: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 503: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 504: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 505: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 506: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 507: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 508: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 509: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 510: deinitializing media..
+07:30:21.427          pjsua_media.c  .Call 511: deinitializing media..
+07:30:21.427           pjsua_pres.c  .Shutting down presence..
+07:30:22.274            pjsua_aud.c  .Closing sound device after idle for 1 second(s)
+07:30:22.275            pjsua_aud.c  ..Closing null sound device..
+07:30:22.427           pjsua_core.c  .Destroying...
+07:30:22.427          pjsua_media.c  .Shutting down media..
+07:30:22.775         sip_endpoint.c  .Destroying endpoint instance..
+07:30:22.775      sip_transaction.c  .Stopping transaction layer module
+07:30:22.775      tsx0x55836c703278  .Request to terminate transaction
+07:30:22.775      tsx0x55836c703278  ..State changed from Completed to Terminated, event=USER
+07:30:22.775      dlg0x55836c6f6f78  ...Transaction tsx0x55836c703278 state changed to Terminated
+07:30:22.775      dlg0x55836c6f6f78  ....Dialog destroyed!
+07:30:22.775     tdta0x55836c7069e8  .Destroying txdata Request msg BYE/cseq=31971 (tdta0x55836c7069e8)
+07:30:22.775      tsx0x55836c703278  .Transaction destroyed!
+07:30:22.775      sip_transaction.c  .Stopped transaction layer module
+07:30:22.775         sip_endpoint.c  .Module "mod-unsolicited-mwi" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-pjsua-options" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-pjsua-im" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-pjsua-pres" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-pjsua" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-stateful-util" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-refer" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-mwi" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-presence" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-evsub" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-invite" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-100rel" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-ua" unregistered
+07:30:22.775      sip_transaction.c  .Transaction layer module destroyed
+07:30:22.775         sip_endpoint.c  .Module "mod-tsx-layer" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-msg-print" unregistered
+07:30:22.775         sip_endpoint.c  .Module "mod-pjsua-log" unregistered
+07:30:22.775        sip_transport.c  .Destroying transport manager
+07:30:22.776      udp0x55836c62fb40  .SIP UDP transport destroyed
+07:30:22.776             tcptp:5080  .SIP TCP transport destroyed
+07:30:22.776             tlstp:5081  .SIP TLS transport destroyed
+07:30:22.776                timer.c  .Dumping timer heap:
+07:30:22.777                timer.c  .  Cur size: 0 entries, max: 3070
+07:30:22.777         sip_endpoint.c  .Endpoint 0x55836c55a448 destroyed
+07:30:22.777           pjsua_core.c  .PJSUA state changed: CLOSING --> NULL
+07:30:22.777           pjsua_core.c  .PJSUA destroyed...

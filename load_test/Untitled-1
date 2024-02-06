@@ -1,0 +1,41 @@
+sipexer --tls-insecure \
+--invite  \
+-co -com \
+-contact-uri "sip:gw+5d63ac1c732ae67118724e3c_sbc_0@20.189.120.18:45061;transport=tls;gw=5d63ac1c732ae67118724e3c_sbc_0" \
+-to-uri "sip:+17634965976@40.88.197.74:45091;transport=tls" \
+-from-uri "sip:+17047650477@20.189.120.18"  \
+-xh "Allow: INVITE,ACK,CANCEL,OPTIONS,BYE,REFER,NOTIFY" \
+-xh "Content-Type: application/sdp" \
+-xh "X-Lxp-CallSid: CA479900399475872406126b39f7649ca8" \
+-mb " \
+v=0
+o=LeapXpert 1693933974 1693933975 IN IP4 20.189.120.18
+s=LeapXpert
+c=IN IP4 20.189.120.18
+t=0 0
+m=audio 52900 RTP/SAVP 102 8 0 103 101
+a=rtpmap:102 opus/48000/2
+a=fmtp:102 useinbandfec=1; usedtx=1; maxaveragebitrate=64000; maxplaybackrate=48000; sprop-maxcapturerate=48000; ptime=20; minptime=10; maxptime=40
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:103 telephone-event/48000
+a=fmtp:103 0-15
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=crypto:10 AES_CM_128_HMAC_SHA1_32 inline:+miB1El9i7DqEZYDm99evrM5V/3+PKfW3utopUlT
+a=crypto:7 AES_CM_128_HMAC_SHA1_80 inline:oDmDi/jR+od4yUe+5Bd71k+4Q39qD92wZeJ9yF5e
+a=silenceSupp:off - - - -
+a=ptime:20
+m=audio 52900 RTP/AVP 102 8 0 103 101
+a=rtpmap:102 opus/48000/2
+a=fmtp:102 useinbandfec=1; usedtx=1; maxaveragebitrate=64000; maxplaybackrate=48000; sprop-maxcapturerate=48000; ptime=20; minptime=10; maxptime=40
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:103 telephone-event/48000
+a=fmtp:103 0-15
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-15
+a=silenceSupp:off - - - -
+a=ptime:20
+" \
+"sip:+17634965976@40.88.197.74:45061;transport=tls"
