@@ -43,8 +43,8 @@ Running /git/voip_patrol/voip_patrol --port 5060 --conf /xml/basic_server.xml --
 
 Start simple UDP server listen on 5060 
 
-`./voip_patrol --port 5060 --conf xml/basic_server.xml  --output /home/azureuser/output/result.json`
+`./voip_patrol --ip-addr 20.110.145.242 --port 5060 --rtp-port 20000-40000 --conf xml/basic_server.xml  --output /home/azureuser/output/result.json & `
 
 do the test sip call to server was initialized 
 
-`VP_ENV_SERVER="127.0.0.1:5060" VP_ENV_CALLEE="12542724631@127.0.0.1:5060" VP_ENV_U=12542724631  bash -c "sleep 0 && ./voip_patrol -p 32527 -c conf.xml -o perf1.json --rtp-port 10010"`
+`VP_ENV_SERVER="172.190.226.226:45070" VP_ENV_CALLEE="12542724631@172.190.226.226" VP_ENV_U=12542724631  bash -c "sleep 0 && ./voip_patrol -p 32527 -c conf.xml -o perf1.json --ip-addr 20.110.145.242 --rtp-port 40257"`
