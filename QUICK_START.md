@@ -47,4 +47,4 @@ Start simple UDP server listen on 5060
 
 do the test sip call to server was initialized 
 
-`VP_ENV_SERVER="127.0.0.1:5060" VP_ENV_CALLEE="12542724631@127.0.0.1:5060" VP_ENV_U=12542724631  bash -c "sleep 0 && ./voip_patrol -p 5080 -c conf.xml -o perf1.json --rtp-port 10010"`
+`VP_ENV_SERVER="127.0.0.1:5060" VP_ENV_CALLEE="12542724631@127.0.0.1:5060" VP_ENV_U=12542724631  bash -c "sleep 0 && ./voip_patrol -p 32527 -c conf.xml -o perf1.json --rtp-port 10010"`
