@@ -28,3 +28,8 @@ In the provided example scenario, each voip_patrol instance will do 100 calls an
     repeat=99"                                                
 />                                                             
 ```
+
+
+## EXAMPLE
+
+`$ VP_ENV_SERVER="172.190.226.226:5060" VP_ENV_CALLEE="12542724631@172.190.226.226:5060" VP_ENV_U=12542724613  bash -c "sleep 0 && ../voip_patrol -p 52744 -c sbc_load.xml -o perf1.json --rtp-port 10010" `

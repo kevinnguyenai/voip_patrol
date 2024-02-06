@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XML_CONF=${XML_CONF-"basic_server.xml"}
+XML_CONF=${XML_CONF-"demo_server.xml"}
 RESULT_FILE=${RESULT_FILE-"result.json"}
 PORT=${PORT="5060"}
 

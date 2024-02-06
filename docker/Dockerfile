@@ -21,5 +21,6 @@ RUN mkdir /xml
 RUN mkdir /output
 
 COPY xml/basic_server.xml /xml
+COPY xml/demo_server.xml /xml
 COPY entry.sh /
 ENTRYPOINT ["/entry.sh"]

@@ -6,63 +6,59 @@
 		-->
 
 		<!-- UDP tests -->
-		<action type="register" transport="udp" expected_cause_code="200" username="username" password="?????????" realm="sip.yourdomain.com" registrar="10.0.0.193"/>
+		<!-- <action type="register" transport="udp" expected_cause_code="200" username="12542724613" password="UGNnvccw" realm="leap.expert" registrar="127.0.0.1"/>
 		<action type="wait"/>
-		<action type="accept" label="server1" wait_until="2" callee="username" hangup="2"/>
-		<action type="call" label="server1" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.193" max_duration="4" hangup="20"/>
+		<action type="accept" label="outbound" wait_until="2" callee="12542724613" hangup="2"/> -->
+		<!-- <action type="call" label="outbound" wait_until="2" expected_cause_code="200" caller="12542724613@20.110.145.242" callee="12542724631@10.9.16.116" max_duration="4" hangup="20"/>
 		<action type="wait"/>
-		<action type="accept" label="server1" wait_until="2" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server1" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.193" hangup="2"/>
-		<action type="wait"/>
-		<action type="accept" label="server2" wait_until="2" callee="username" hangup="2"/>
-		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.194" max_duration="4" hangup="20"/>
-		<action type="wait"/>
-		<action type="accept" label="server2" wait_until="2" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.194" hangup="2"/>
-		<action type="wait"/>
-		<action type="accept" label="server3" wait_until="2" callee="username" hangup="2"/>
-		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.195" max_duration="4" hangup="20"/>
-		<action type="wait"/>
-		<action type="accept" label="server3" wait_until="2" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.195" hangup="2"/>
-		<action type="wait"/>
-		<action type="accept" label="server4" wait_until="2" callee="username" hangup="2"/>
-		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.196" max_duration="4" hangup="20"/>
-		<action type="wait"/>
-		<action type="accept" label="server4" wait_until="2" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.196" hangup="2"/>
+		<action type="accept" label="outbound" wait_until="3" callee="username" hangup="20" max_duration="4"/> -->
 
+	  <!-- Two AM on the same tenant call together -->
+
+		<!-- <action type="turn" enabled="true" server="stun.l.google.com:19302" sip_stun_use="false" media_stun_use="true" stun_only="true" username="stun" password="stun"/> -->
+		<!-- <action type="wait" complete="true"/> -->
+		<!-- <action type="register" transport="udp" expected_cause_code="200" username="12542724631" password="12542724631" realm="20.110.145.242" registrar="20.110.145.242"/> -->
+		<!-- <action type="wait" complete="true"/> -->
+		<action type="codec" disable="all"/>
+    <action type="codec" enable="pcma" priority="250"/>
+    <action type="codec" enable="pcmu" priority="249"/>
+		<action type="call" label="outbound" max_ringing_duration="20" expected_cause_code="200" caller="12542724631@20.110.145.242" callee="12542724613@172.190.226.226:45070" hangup="25" transport="udp" rtp_stats="true" play="./voice_ref_files/reference_8000.wav" username="12542724631" password="12542724631" repeat="2000"/>
+		<action type="wait" complete="true"/>
+		<!-- Anonymous Client call to User -->
+		<!-- <action type="call" label="outbound" wait_until="3" expected_cause_code="200" caller="Anonymous@20.110.145.242" callee="12542724613@172.190.226.226:45070" hangup="10" transport="udp"/>
+		<action type="wait"/>
+		<action type="accept" label="outbound" wait_until="3" callee="username" hangup="10"/>-->
 		<action type="wait-complete"/>
 
 		<!-- TCP tests -->
 
-		<action type="register" transport="tcp" expected_cause_code="200" username="username" password="M4C6JA9gzpzz" realm="sip.yordomain.com" registrar="10.0.0.193"/>
+		<!-- <action type="register" transport="tcp" expected_cause_code="200" username="username" password="M4C6JA9gzpzz" realm="sip.yordomain.com" registrar="10.0.0.193"/>
 		<action type="wait"/>
-		<action type="accept" label="server1" wait_until="3" callee="username" hangup="2"/>
-		<action type="call" label="server1" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.193" max_duration="4" hangup="20"/>
+		<action type="accept" label="outbound" wait_until="3" callee="username" hangup="2"/>
+		<action type="call" label="outbound" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.193" max_duration="4" hangup="20"/>
 		<action type="wait"/>
-		<action type="accept" label="server1" wait_until="3" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server1" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.193" hangup="2"/>
+		<action type="accept" label="outbound" wait_until="3" callee="username" hangup="20" max_duration="4"/>
+		<action type="call" label="outbound" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.193" hangup="2"/>
 		<action type="wait"/>
 		<action type="accept" label="server2" wait_until="3" callee="username" hangup="2"/>
-		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.194" max_duration="4" hangup="20"/>
+		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.194" max_duration="4" hangup="20"/>
 		<action type="wait"/>
 		<action type="accept" label="server2" wait_until="3" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.194" hangup="2"/>
+		<action type="call" label="server2" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.194" hangup="2"/>
 		<action type="wait"/>
 		<action type="accept" label="server3" wait_until="3" callee="username" hangup="2"/>
-		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.195" max_duration="4" hangup="20"/>
+		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.195" max_duration="4" hangup="20"/>
 		<action type="wait"/>
 		<action type="accept" label="server3" wait_until="3" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.195" hangup="2"/>
+		<action type="call" label="server3" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.195" hangup="2"/>
 		<action type="wait"/>
 		<action type="accept" label="server4" wait_until="3" callee="username" hangup="2"/>
-		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.196" max_duration="4" hangup="20"/>
+		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.196" max_duration="4" hangup="20"/>
 		<action type="wait"/>
 		<action type="accept" label="server4" wait_until="3" callee="username" hangup="20" max_duration="4"/>
-		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@147.75.65.193" callee="12062091234@10.0.0.196" hangup="2"/>
+		<action type="call" label="server4" wait_until="3" expected_cause_code="200" caller="username@20.110.145.242" callee="12062091234@10.0.0.196" hangup="2"/>
 		
-		<action type="wait-complete"/>
+		<action type="wait-complete"/> -->
 		<!--
 		-->
 	</actions>

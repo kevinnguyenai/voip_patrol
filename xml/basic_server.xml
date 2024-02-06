@@ -1,0 +1,23 @@
+<config><actions>
+	<action type="turn" enabled="true" server="stun.l.google.com:19302" sip_stun_use="true" media_stun_use="true" stun_only="true" username="stun" password="stun"/>
+	<action type="wait" complete="true"/>
+	<action type="codec" disable="all"/>
+	<action type="codec" enable="pcma" priority="250"/>
+	<action type="codec" enable="pcmu" priority="248"/>
+	<action type="accept"
+	    transport="udp"
+	    code="200"
+	    reason="OK"
+	    ring_duration="20"
+			max_duration="20"
+	    hangup="12"
+			account="12542724631"
+			username="12542724631"
+			password="12542724631"
+			force_contact="sip:12542724631@20.110.145.242:5060"
+			rtp_stats="true"
+			play="../voice_ref_files/reference_8000_12s.wav"
+			
+	/>
+	<action type="wait" ms="-1"/>
+</actions></config>
