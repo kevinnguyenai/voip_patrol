@@ -28,6 +28,20 @@ It is possible to test many scenarios that are not easy to test manually like a 
 additional lib will be required to build on macos is 
 reference `docker/Dockerfile.arm`
 
+make sure you already install cmake openssl uuid ...
+
+```
+git submodule update --init
+cp include/pjproject/pjlib/include/pj/config_site.h.arm   pjproject/pjlib/include/pj/config_site.h
+cp include/pjproject/pjlib/include/pj/config.h.arm   pjproject/pjlib/include/pj/config.h
+pushd pjproject
+/configure --host=arm-apple-darwin --disable-libwebrtc --disable-opencore-amr && make dep && make
+make install
+popd
+cmake CMakefile.txt
+make 
+```
+
 
 ### run
 ```
