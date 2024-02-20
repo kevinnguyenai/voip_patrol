@@ -26,19 +26,7 @@ It is possible to test many scenarios that are not easy to test manually like a 
 
 ### MACOS NOTE
 additional lib will be required to build on macos is 
-- brew install ossp-uuid
-- 
-
-ALSA `asound` don't support MACOS , we need a bridge and we have alternative solution here come with JACK
-```
-brew install jack
-To start jack now and restart at login:
-  brew services start jack
-Or, if you don't want/need a background service you can just run:
-  /opt/homebrew/opt/jack/bin/jackd -X coremidi -d coreaudio
-➜  ~ brew services start jack
-```
-
+reference `docker/Dockerfile.arm`
 
 
 ### run
