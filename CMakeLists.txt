@@ -4,7 +4,6 @@ project(voip_patrol VERSION 1.0.0 LANGUAGES C CXX)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_MACOSX_BUNDLE ON)
 
-
 message("CMAKE_SYSTEM_PROCESSOR:${CMAKE_SYSTEM_PROCESSOR} CMAKE_SYSTEM:${CMAKE_SYSTEM}  CMAKE_BUILD_TYPE:${CMAKE_BUILD_TYPE} OV:${OV}")
 
 set(ROOT_DIR ".")
@@ -38,50 +37,123 @@ include_directories(${ROOT_DIR}/pjproject/pjlib-util/include)
 include_directories(${ROOT_DIR}/include)
 
 set(SOURCE_FILES ${VOIP_PATROL_SRCS_CPP} ${VOIP_PATROL_SRCS_C} ${CURL_SRCS} ${EZXML_SRCS})
-
+message("SOURCE_FILES: ${SOURCE_FILES}")
 add_executable(voip_patrol ${SOURCE_FILES})
 
 set(CMAKE_LIBRARY_PATH
 	"${ROOT_DIR}/pjproject/pjsip/lib"
 	"${ROOT_DIR}/pjproject/pjnath/lib"
 	"${ROOT_DIR}/pjproject/pjlib/lib"
-	"${ROOT_DIR}/pjproject/media/lib"
+	"${ROOT_DIR}/pjproject/pjmedia/lib"
 	"${ROOT_DIR}/pjproject/pjlib-util/lib"
 )
-
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g")
-#set(AC_SYSTEM "arm-apple-darwin")
-
-execute_process(COMMAND "./pjproject/config.guess" OUTPUT_VARIABLE AC_SYSTEM)
-string(STRIP ${AC_SYSTEM} AC_SYSTEM)
-target_link_libraries(voip_patrol
-	pjsua2-${AC_SYSTEM}
-	stdc++
-	pjsua-${AC_SYSTEM}
-	pjsip-ua-${AC_SYSTEM}
-	pjsip-simple-${AC_SYSTEM}
-	pjsip-${AC_SYSTEM}
-	pjmedia-codec-${AC_SYSTEM}
-	pjmedia-${AC_SYSTEM}
-	pjmedia-videodev-${AC_SYSTEM}
-	pjmedia-audiodev-${AC_SYSTEM}
-	pjmedia-${AC_SYSTEM}
-	pjnath-${AC_SYSTEM}
-	pjlib-util-${AC_SYSTEM}
-	srtp-${AC_SYSTEM}
-	resample-${AC_SYSTEM}
-	gsmcodec-${AC_SYSTEM}
-	speex-${AC_SYSTEM}
-	ilbccodec-${AC_SYSTEM}
-	g7221codec-${AC_SYSTEM}
-	pj-${AC_SYSTEM}
-	pthread
-	curl
-	m
-	asound
-	ssl
-	-std=c++17
+set(CMAKE_INCLUDE_PATH
+	"${ROOT_DIR}/pjproject/pjsip/include"
+	"${ROOT_DIR}/pjproject/pjnath/include"
+	"${ROOT_DIR}/pjproject/pjlib/include"
+	"${ROOT_DIR}/pjproject/pjmedia/include"
+	"${ROOT_DIR}/pjproject/pjlib-util/include"
+	"/usr/local/include"
+	"/opt/homebrew/Cellar/portaudio/19.7.0/include"
+	"/opt/homebrew/include"
 )
+
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin") 
+	message(">> Darwin")
+	find_library(SECURITY_LIBRARY Security)
+	find_library(AUDIOTOOLBOX_LIBRARY AudioToolbox)
+	find_library(COREFOUNDATION_LIBRARY CoreFoundation)
+	find_library(COREAUDIO_LIBRARY CoreAudio)
+	message("SECURITY_LIBRARY:${SECURITY_LIBRARY} AUDIOTOOLBOX_LIBRARY:${AUDIOTOOLBOX_LIBRARY} COREFOUNDATION_LIBRARY:${COREFOUNDATION_LIBRARY}")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+	set(CMAKE_LIBRARY_PATH
+		"${CMAKE_LIBRARY_PATH}"
+		"/usr/local/lib"
+		"/opt/homebrew/lib"
+		"/opt/homebrew/Cellar/portaudio/19.7.0/lib"
+	)
+endif()
+message("CMAKE_LIBRARY_PATH:${CMAKE_LIBRARY_PATH}")
+
+## amd64
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux") 
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g")
+## arm64
+elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g")
+endif()
+
+message("CMAKE_CXX_FLAGS:${CMAKE_CXX_FLAGS}")
+execute_process(COMMAND "./pjproject/config.guess" OUTPUT_VARIABLE AC_SYSTEM)
+message("$CMAKE_SYSTEM:${CMAKE_SYSTEM} AC_SYSTEM:${AC_SYSTEM}")
+## amd64
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux") 
+	string(STRIP "${AC_SYSTEM}" AC_SYSTEM)
+	target_link_libraries(voip_patrol
+		pjsua2-${AC_SYSTEM}
+		stdc++
+		pjsua-${AC_SYSTEM}
+		pjsip-ua-${AC_SYSTEM}
+		pjsip-simple-${AC_SYSTEM}
+		pjsip-${AC_SYSTEM}
+		pjmedia-codec-${AC_SYSTEM}
+		pjmedia-${AC_SYSTEM}
+		pjmedia-videodev-${AC_SYSTEM}
+		pjmedia-audiodev-${AC_SYSTEM}
+		pjmedia-${AC_SYSTEM}
+		pjnath-${AC_SYSTEM}
+		pjlib-util-${AC_SYSTEM}
+		srtp-${AC_SYSTEM}
+		resample-${AC_SYSTEM}
+		gsmcodec-${AC_SYSTEM}
+		speex-${AC_SYSTEM}
+		ilbccodec-${AC_SYSTEM}
+		g7221codec-${AC_SYSTEM}
+		pj-${AC_SYSTEM}
+		pthread
+		curl
+		m
+		asound
+		ssl
+		-std=c++17
+	)
+## arm64
+elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
+  message(">> Darwin")
+	string(STRIP "arm-apple-darwin" AC_SYSTEM)
+	target_link_libraries(voip_patrol
+		${SECURITY_LIBRARY}
+		${AUDIOTOOLBOX_LIBRARY}
+		${COREAUDIO_LIBRARY}
+		${COREFOUNDATION_LIBRARY}
+		pjsua2-${AC_SYSTEM}
+		stdc++
+		pjsua-${AC_SYSTEM}
+		pjsip-ua-${AC_SYSTEM}
+		pjsip-simple-${AC_SYSTEM}
+		pjsip-${AC_SYSTEM}
+		pjmedia-codec-${AC_SYSTEM}
+		pjmedia-${AC_SYSTEM}
+		pjmedia-videodev-${AC_SYSTEM}
+		pjmedia-audiodev-${AC_SYSTEM}
+		pjmedia-${AC_SYSTEM}
+		pjnath-${AC_SYSTEM}
+		pjlib-util-${AC_SYSTEM}
+		srtp-${AC_SYSTEM}
+		resample-${AC_SYSTEM}
+		gsmcodec-${AC_SYSTEM}
+		speex-${AC_SYSTEM}
+		ilbccodec-${AC_SYSTEM}
+		g7221codec-${AC_SYSTEM}
+		pj-${AC_SYSTEM}
+		pthread
+		curl
+		m
+		ssl
+		-std=c++17
+	)
+endif()
+
 
 find_package(PkgConfig REQUIRED)
 pkg_search_module(OPENSSL openssl)
