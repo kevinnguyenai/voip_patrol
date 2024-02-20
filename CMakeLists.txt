@@ -46,6 +46,9 @@ set(CMAKE_LIBRARY_PATH
 	"${ROOT_DIR}/pjproject/pjlib/lib"
 	"${ROOT_DIR}/pjproject/pjmedia/lib"
 	"${ROOT_DIR}/pjproject/pjlib-util/lib"
+	"/opt/homebrew/lib"
+	"/usr/local/lib"
+	"/opt/homebrew/Cellar/portaudio/19.7.0/lib"
 )
 set(CMAKE_INCLUDE_PATH
 	"${ROOT_DIR}/pjproject/pjsip/include"
@@ -53,24 +56,23 @@ set(CMAKE_INCLUDE_PATH
 	"${ROOT_DIR}/pjproject/pjlib/include"
 	"${ROOT_DIR}/pjproject/pjmedia/include"
 	"${ROOT_DIR}/pjproject/pjlib-util/include"
+	"/opt/homebrew/include"
 	"/usr/local/include"
 	"/opt/homebrew/Cellar/portaudio/19.7.0/include"
-	"/opt/homebrew/include"
 )
 
 if(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin") 
 	message(">> Darwin")
+	find_library(FOUNDATION_LIBRARY Foundation)
+	find_library(NETWORK_LIBRARY Network)
 	find_library(SECURITY_LIBRARY Security)
 	find_library(AUDIOTOOLBOX_LIBRARY AudioToolbox)
 	find_library(COREFOUNDATION_LIBRARY CoreFoundation)
 	find_library(COREAUDIO_LIBRARY CoreAudio)
-	message("SECURITY_LIBRARY:${SECURITY_LIBRARY} AUDIOTOOLBOX_LIBRARY:${AUDIOTOOLBOX_LIBRARY} COREFOUNDATION_LIBRARY:${COREFOUNDATION_LIBRARY}")
+	message("NETWORK_LIBRARY: ${NETWORK_LIBRARY} SECURITY_LIBRARY:${SECURITY_LIBRARY} AUDIOTOOLBOX_LIBRARY:${AUDIOTOOLBOX_LIBRARY} COREFOUNDATION_LIBRARY:${COREFOUNDATION_LIBRARY}")
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 	set(CMAKE_LIBRARY_PATH
 		"${CMAKE_LIBRARY_PATH}"
-		"/usr/local/lib"
-		"/opt/homebrew/lib"
-		"/opt/homebrew/Cellar/portaudio/19.7.0/lib"
 	)
 endif()
 message("CMAKE_LIBRARY_PATH:${CMAKE_LIBRARY_PATH}")
@@ -122,6 +124,8 @@ elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
   message(">> Darwin")
 	string(STRIP "arm-apple-darwin" AC_SYSTEM)
 	target_link_libraries(voip_patrol
+	  ${FOUNDATION_LIBRARY}
+		${NETWORK_LIBRARY}
 		${SECURITY_LIBRARY}
 		${AUDIOTOOLBOX_LIBRARY}
 		${COREAUDIO_LIBRARY}
@@ -149,6 +153,7 @@ elseif(${CMAKE_SYSTEM_NAME} STREQUAL "Darwin")
 		pthread
 		curl
 		m
+		portaudio
 		ssl
 		-std=c++17
 	)

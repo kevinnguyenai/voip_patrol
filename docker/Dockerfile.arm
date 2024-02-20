@@ -13,6 +13,7 @@ RUN echo "building VoIP Patrol" \
 	&& mkdir /git && cd /git && git clone https://github.com/kevinnguyenai/voip_patrol.git \
 	&& cd voip_patrol && git checkout ${VERSION} \
 	&& git submodule update --init \
+	&& cp include/user.mak pjproject/ \
 	&& cp include/pjproject/pjlib/include/pj/config_site.h.arm   pjproject/pjlib/include/pj/config_site.h \
 	&& cp include/pjproject/pjlib/include/pj/config.h.arm   pjproject/pjlib/include/pj/config.h \
 	#&& ./configure --host=arm-apple-darwin --disable-libwebrtc --disable-opencore-amr && make dep && make 
