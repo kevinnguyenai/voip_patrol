@@ -1,0 +1,26 @@
+// Copyright (c) 2023 Kevin Nguyen <kevin.nguyen.ai@gmail.com>
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
+#define PJ_IOQUEUE_MAX_HANDLES      1024
+#define FD_SETSIZE_SETABLE      1
+#define __FD_SETSIZE            1024
+
+#define PJSIP_MAX_TRANSPORTS        32
+#define PJSIP_MAX_RESOLVED_ADDRESSES    32
+
+#define PJSUA_MAX_ACC       512
+#define PJSUA_MAX_CALLS     512
+#define PJSUA_MAX_PLAYERS   512
+
+// SSL
+#define PJ_HAS_SSL_SOCK 1
+#define PJ_SSL_SOCK_IMP PJ_SSL_SOCK_IMP_APPLE
+
+#define PJSUA_DISABLE_AUTO_SEND_100 1
+// ARM
+//#define ARM 1
+#define PJ_HAS_PENTIUM	0
+#define PJ_IS_LITTLE_ENDIAN	1
+#define PJ_IS_BIG_ENDIAN	0

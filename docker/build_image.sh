@@ -1,7 +1,8 @@
 #!/bin/sh
 TAG="0.4.0"
-docker build . --no-cache -t voip_patrol
-docker tag voip_patrol:latest jchavanton/voip_patrol:latest
-docker tag voip_patrol:latest jchavanton/voip_patrol:${TAG}
+PLATFORM="linux/amd64"
+docker build . --no-cache --platform ${PLATFORM} -t voip_patrol
+docker tag voip_patrol:latest ocpasia/voip_patrol:latest
+docker tag voip_patrol:latest ocpasia/voip_patrol:${TAG}
 echo "Don't forget to push !"
-echo "docker push jchavanton/voip_patrol:latest && docker push jchavanton/voip_patrol:${TAG}"
+echo "docker tag voip_patrol:latest  ocpasia/voip_patrol:latest && docker push ocpasia/voip_patrol:latest && docker push ocpasia/voip_patrol:${TAG}"

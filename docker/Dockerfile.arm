@@ -1,0 +1,31 @@
+#FROM python:3.11.4-bullseye
+#FROM arm64v8/python:3.7-slim-buster
+#FROM arm64v8/python:3.7.17-buster
+FROM arm64v8/python:3.11-bookworm
+
+ARG VERSION="feature/mac"
+
+RUN echo "installing dependencies" \
+	&& apt-get update && apt-get install -y build-essential libcurl4-openssl-dev cmake pkg-config libasound2-dev \
+	&& apt-get -y install libssl-dev git
+
+RUN echo "building VoIP Patrol" \
+	&& mkdir /git && cd /git && git clone https://github.com/kevinnguyenai/voip_patrol.git \
+	&& cd voip_patrol && git checkout ${VERSION} \
+	&& git submodule update --init \
+	&& cp include/pjproject/pjlib/include/pj/config_site.h.arm   pjproject/pjlib/include/pj/config_site.h \
+	&& cp include/pjproject/pjlib/include/pj/config.h.arm   pjproject/pjlib/include/pj/config.h \
+	#&& ./configure --host=arm-apple-darwin --disable-libwebrtc --disable-opencore-amr && make dep && make 
+	&& cd pjproject && ./configure --host=aarch64-linux-gnu --disable-libwebrtc --disable-opencore-amr --disable-video \
+	&& make dep && make && make install \
+	&& cd .. && cmake CMakeLists.txt && make
+
+RUN ln -s /git/voip_patrol/voice_ref_files /voice_ref_files
+
+RUN mkdir /xml
+RUN mkdir /output
+
+COPY xml/basic_server.xml /xml
+COPY xml/demo_server.xml /xml
+COPY entry.sh /
+ENTRYPOINT ["/entry.sh"]
